@@ -9,4 +9,4 @@ public class first{
           system.out.println("Division =" +(a/b));
           system.out.println("product =" +(a*b));
     }
-}          
+}         
