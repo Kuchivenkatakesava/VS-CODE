@@ -4,9 +4,9 @@ public class first{
         double a = 50.9;
         int b = -6;
           
-          system.out.println("sum =" + (a+b));
-          system.out.println("subtraction =" + (a-b));
-          system.out.println("Division =" +(a/b));
-          system.out.println("product =" +(a*b));
+          System.out.println("sum =" + (a+b));
+          System.out.println("subtraction =" + (a-b));
+          System.out.println("Division =" +(a/b));
+          System.out.println("product =" +(a*b));
     }
 }         

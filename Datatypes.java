@@ -1,15 +1,15 @@
-package Basics;
 
-public class datatypes {
+
+public class Datatypes {
     public static void main(String[] args) {
         // numbers -> Integers
-        int a = -11;
+        int a = -12;
 
         // point, decimal value
-        double d = 47.6;
+           = 45.6;
 
         // Word, Sentence
-        String s = "kesava is the Trainer";
+        String s = "Aaryan is the Trainer";
 
         // Character
         char ch = 'a';
