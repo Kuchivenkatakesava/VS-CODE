@@ -6,7 +6,7 @@ public class evenodd {
     public static void main(String[] args) {
         System.out.println("Enter a number");
         Scanner Sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        int n = Sc.nextInt();
 
         // n % 2 == 0 (even)
         // n % 2 not = 0 (odd)
