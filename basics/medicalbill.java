@@ -1,72 +1,92 @@
 package basics;
 
-import java.util. ArrayDeque;
+import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.UUID;
 
 public class medicalbill {
-    static Queue<Details> q= new ArrayDeque<>();
+    static Queue<Details> q = new ArrayDeque<>();
     public static Details inputDetails() {
-        Scanner sc = new Scanner(system.in);
+        Scanner sc = new Scanner(System.in);
 
-        string id = UUID.randomUUID().tostring();
+        String id = UUID.randomUUID().toString();
 
-        System.out.print("enter name: ");
-        string name = sc.nextline();
+        System.out.print("Enter name : ");
+        String name = sc.nextLine();
 
-        System.out.print("enter age: ");
-        int age =sc.nextline();
+        System.out.print("Enter age : ");
+        int age = sc.nextInt();
 
-        System.out.print("disease name: ");
-        string diseasename = sc.nextline();
+        System.out.print("Disease name : ");
+        String diseasename = sc.nextLine();
 
-        System.out.print("enter you phone no: ");
-        int phoneno =sc.nextline();
+        System.out.print("Enter your phone no : ");
+        int phoneno = sc.nextInt();
 
-        Details d= new details (id,name,age,diseasename,phoneno);
+        Details d = new Details(id, name, age, diseasename, phoneno);
 
         sc.close();
         return d;
-
     }
-    
-    public static void main (String[] args)  {
+
+    public static void main(String[] args) {
         Details d = inputDetails();
         q.add(d);
-
 
         q.forEach(e -> {
             System.out.println("ID : " + e.getId());
             System.out.println("Name : " + e.getName());
             System.out.println("Age : " + e.getAge());
-            System.out.println("disease : " e.getDiseasename());
-            System.out.println("phonen no :" + e.getphoneno());
+            System.out.println("Disease : " + e.getDiseasename());
+            System.out.println("Phone no : " + e.getPhoneno());
         });
-        
     }
 }
 class Details {
-    string id;
-    string name;
+    String id;
+    String name;
     int age;
-    string diseasename;
+    String diseasename;
     int phoneno;
-    public Details(String id,String name, Int age, String diseasename, int phoneo) {
+    public Details(String id, String name, int age, String diseasename, int phoneno) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.diseasename = diseasename;
         this.phoneno = phoneno;
-
     }
-    public String getName() {
-        return null;
-    }
-    public String getid() {
+    public String getId() {
         return id;
     }
     public void setId(String id) {
         this.id = id;
     }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public int getAge() {
+        return age;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public String getDiseasename() {
+        return diseasename;
+    }
+    public void setDiseasename(String diseasename) {
+        this.diseasename = diseasename;
+    }
+    public int getPhoneno() {
+        return phoneno;
+    }
+    public void setPhoneno(int phoneno) {
+        this.phoneno = phoneno;
+    }
+
+    
+}
 
