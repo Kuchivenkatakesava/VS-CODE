@@ -27,7 +27,7 @@ public class problem {
            System.out.println("Better luck next time");
 
         else {
-            iterator itr=(iterator) problem.iterator();
+            Iterator<String> itr= problem.iterator();
             int max=-1;
             String res="";
             while(itr.Hasnext())
