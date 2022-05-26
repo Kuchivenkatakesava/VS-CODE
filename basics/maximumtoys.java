@@ -2,7 +2,7 @@ package basics;
 
 
     import java.util.*;
-class maximumtoys {
+class Maximumtoys {
     public static int getmaxtoys(int prices[],int money) { 
         int sum=0;
         int count=0;
