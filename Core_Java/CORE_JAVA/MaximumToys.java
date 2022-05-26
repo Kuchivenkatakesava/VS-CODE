@@ -1,7 +1,9 @@
-package basics;
+package CORE_JAVA;
 import java.util.*;
-class CodingTest {
-    public static int getCodingToys(int prices[],int money) { 
+class MaximumToys 
+ { 
+
+    public static int getMaxToys(int prices[],int money) { 
         int sum=0;
         int count=0;
         int max=0;
@@ -25,7 +27,8 @@ class CodingTest {
         }
         return max;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {    
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         int prices[]=new int[n];
@@ -35,3 +38,5 @@ class CodingTest {
         System.out.println(getMaxToys(prices,money));
     }            
 }
+
+

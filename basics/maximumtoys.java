@@ -1,7 +1,9 @@
 package basics;
-import java.util.*;
-class CodingTest {
-    public static int getCodingToys(int prices[],int money) { 
+
+
+    import java.util.*;
+class maximumtoys {
+    public static int getmaxtoys(int prices[],int money) { 
         int sum=0;
         int count=0;
         int max=0;
@@ -32,6 +34,7 @@ class CodingTest {
         for(int i=0;i<n;i++)
         prices[i]=sc.nextInt();
         int money=sc.nextInt();
-        System.out.println(getMaxToys(prices,money));
+        System.out.println(getmaxtoys(prices,money));
     }            
 }
+

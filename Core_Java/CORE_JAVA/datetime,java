@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.TimeZone;
 
-public class Date_Time {
+public class datetime {
     public static void main(String[] args) {
 
         // Method 1

@@ -1,7 +1,6 @@
-package basics;
 import java.util.*;
-class CodingTest {
-    public static int getCodingToys(int prices[],int money) { 
+class MaximumToys {
+    public static int getMaxToys(int prices[],int money) { 
         int sum=0;
         int count=0;
         int max=0;
